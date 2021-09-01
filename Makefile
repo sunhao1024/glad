@@ -18,7 +18,7 @@ ifdef DEBUG
 endif
 
 all: $(obj)
-	@echo -e "\033[1mMaking shared library \033[32m[$(target)]\033[0m"
+	@echo -e "\e[32mMaking shared library \e[1m[$(target)]\e[0m"
 	@echo obj= $(obj)
 	$(CC) $(obj) -o $(target) $(CFLAGS) $(LDFLAGS) $(LIBS)
 
